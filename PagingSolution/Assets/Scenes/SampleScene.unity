@@ -456,5 +456,14 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3867657098044776152, guid: d2f0259624e633f46bf5487b364c78df,
+        type: 3}
+      propertyPath: m_Name
+      value: NextButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 4092668862941799, guid: d2f0259624e633f46bf5487b364c78df, type: 3}
+      propertyPath: m_Name
+      value: PreviousButton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f0259624e633f46bf5487b364c78df, type: 3}
