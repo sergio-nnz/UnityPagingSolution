@@ -8,21 +8,34 @@ public class PageController : MonoBehaviour
     [SerializeField] private Button _previousButton;
     [SerializeField] private TextMeshProUGUI _textPage;
 
-    // IPage pageSelection = new PageSelector();
+    private int PageCount { get; set; }
 
-    public void SetTextForPaging()
+    private PageController()
     {
-        //  Sets new text to the pager
+        PageCount = 1;
+    }
+
+    public void SetTextForPaging(string newText)
+    {
+        _textPage.text = newText;
     }
 
     public void NexPage()
     {
-        // Set text from a certain iterator?
+        PageCount++;
+        _textPage.pageToDisplay = PageCount;
     }
 
     public void PreviousPage()
     {
-        // Set text from a certain iterator
+        PageCount--;
+        _textPage.pageToDisplay = PageCount;
+    }
+
+    public void RestorePage()
+    {
+        PageCount = 1;
+        _textPage.pageToDisplay = PageCount;
     }
 
     public void ToggleButtons()
