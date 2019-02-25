@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2892059655392278583}
   - component: {fileID: 1917376555048916605}
   m_Layer: 0
-  m_Name: Button (1)
+  m_Name: PreviousButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,8 +288,9 @@ GameObject:
   - component: {fileID: 5839766079864455028}
   - component: {fileID: 8972064813676696788}
   - component: {fileID: 8204237976619357736}
+  - component: {fileID: 2377534845983093352}
   m_Layer: 0
-  m_Name: Panel
+  m_Name: TextPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -337,7 +338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -352,6 +353,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &2377534845983093352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2377534845983093351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecfec8d5e527d54da344008eb0030ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nextButton: {fileID: 6478516665385162825}
+  _previousButton: {fileID: 1917376555048916605}
+  _textPage: {fileID: 4391843091639690986}
 --- !u!1 &3217542662305021685
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +478,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 5
   m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
@@ -525,7 +541,7 @@ GameObject:
   - component: {fileID: 203454942378787508}
   - component: {fileID: 6478516665385162825}
   m_Layer: 0
-  m_Name: Button
+  m_Name: NextButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

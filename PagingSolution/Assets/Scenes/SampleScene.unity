@@ -456,6 +456,11 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2377534845983093351, guid: d2f0259624e633f46bf5487b364c78df,
+        type: 3}
+      propertyPath: m_Name
+      value: TextPanel
+      objectReference: {fileID: 0}
     - target: {fileID: 3867657098044776152, guid: d2f0259624e633f46bf5487b364c78df,
         type: 3}
       propertyPath: m_Name
@@ -467,3 +472,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f0259624e633f46bf5487b364c78df, type: 3}
+--- !u!1 &2377534845983093351 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2377534845983093351, guid: d2f0259624e633f46bf5487b364c78df,
+    type: 3}
+  m_PrefabInstance: {fileID: 1046626236979159744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2377534845983093352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2377534845983093351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ecfec8d5e527d54da344008eb0030ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _nextButton: {fileID: 0}
+  _previousButton: {fileID: 0}
+  _textPage: {fileID: 0}
